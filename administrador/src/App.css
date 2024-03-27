@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'XD';
+  src: url("../src/fonts/coolvetica\ rg.otf");
+}
+
+.App{
+  font-family: XD;
+}

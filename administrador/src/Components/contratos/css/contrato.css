@@ -1,0 +1,43 @@
+/* Estilos para el contenedor principal */
+.contenedor {
+    padding: 4%;
+  }
+  
+  /* Estilos para la tabla */
+  .table {
+    text-align: justify;
+    border-radius: 10px;
+    overflow: hidden;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .table th,
+  .table td {
+    padding: 8px;
+    border: 1px solid #dddddd;
+  }
+  
+  .table th {
+    background-color: #f2f2f2; /* Color de fondo para las cabeceras */
+  }
+  
+  /* Estilos para el contenedor de botones y buscador */
+  .boton-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .filtro {
+    margin-left: 10px;
+  }
+  
+  /* Estilos para el título */
+  .titulo {
+    margin: 2%;
+    text-align: left;
+    color: #333333; /* Color del texto */
+  }
+  

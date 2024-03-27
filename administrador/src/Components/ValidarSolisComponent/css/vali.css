@@ -1,0 +1,26 @@
+.navbar-wide {
+    background-color: #579EFD;
+    width: auto;
+  }
+  
+  ion-icon{
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .person {
+    text-align: left;
+  }
+  
+  td{
+    font-weight: 500;
+  }
+  
+  body {
+    background-color: #83B7FC;
+  }
+  
+  .table.rounded{
+    border-radius: 20%;
+    overflow: hidden;
+  }

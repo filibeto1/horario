@@ -1,0 +1,25 @@
+.contenedor {
+  padding: 4%;
+}
+
+.table {
+  text-align: justify;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.boton-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.filtro {
+  margin-left: 10px;
+}
+
+.titulo {
+  margin: 2%;
+  text-align: left;
+}

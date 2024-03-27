@@ -1,0 +1,346 @@
+/* Estilos para el mensaje emergente */
+.mensaje-emergente {
+    position: fixed;
+    top: 50px; /* Altura deseada desde la parte superior */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+    z-index: 1000;
+  }
+  
+  .mensaje-emergente p {
+    margin-bottom: 10px;
+  }
+  
+  .mensaje-emergente button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .mensaje-emergente button:hover {
+    background-color: #0056b3;
+  }
+  
+  .filtro {
+    position: relative;
+    display: inline-block;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .filtro input {
+    width: 100%;
+    padding: 5px 10px; /* Añadimos padding aquí para mantener el espaciado interior */
+    border: none; /* Eliminamos el borde interior */
+    border-radius: 20px; /* Aplicamos borde redondo al input */
+    box-sizing: border-box; /* Incluimos el padding y el borde en el ancho total del input */
+  }
+  
+  .filtro label {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    font-size: 12px;
+  }
+  .filtro-turno {
+    position: absolute; /* O relative, según el comportamiento deseado */
+    /* Establece la posición, el tamaño y otros estilos necesarios */
+  }
+  
+
+  /* Estilos para el botón "Agregar" */
+  .buttonAgregar {
+    background-color: green; /* Fondo verde */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 2px; /* Borde redondeado */
+    padding: 5px 10px; /* Ajuste el padding para hacer el botón un poco más pequeño */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    margin-top: 10px; /* Añade espacio superior */
+    margin-left: 0; /* Mueve el botón completamente a la izquierda */
+    display: block; /* Cambia el botón a un elemento de bloque para centrarlo */
+    width: auto; /* Establece el ancho automático */
+  }
+  /* Estilos para el contenedor de botones */
+.AGEMBotonContainer {
+    display: flex;
+    justify-content: flex-start; /* Alinea los elementos al principio (izquierda) */
+    align-items: center;
+    margin-bottom: 15px;
+    width: 98.8%;
+}
+
+/* Estilos para el botón "Actualizar" */
+.actualizar {
+    background-color: rgb(8, 130, 207); /* Fondo azul */
+    color: white; /* Texto blanco */
+    border-radius: 5px; 
+    border: none;
+    box-shadow: none;
+}
+
+/* Estilos para el botón "Eliminar" */
+.eliminar {
+    background-color: red; /* Fondo rojo */
+    color: white; /* Texto blanco */
+    border-radius: 5px; 
+    border: none;
+    box-shadow: none;
+    margin-left: 10px; /* Agrega margen a la izquierda para separarlo del botón "Actualizar" */
+}
+
+
+  
+  
+  /* Estilos para el buscador */
+  .AGEMBuscador {
+    margin-left: 10px;
+  }
+  /* Estilos para el título */
+  .AGEMTitulo {
+    margin: 2%;
+    text-align: right; /* Alinea el texto a la derecha */
+}
+
+  /* Estilos para las tarjetas */
+  .AGEMCard {
+    min-height: 350px;
+  }
+
+.formulario-emergente {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+  }
+  
+  /* Estilos para el contenedor principal del formulario emergente */
+
+.formulario-container {
+    background-color: white;
+    padding: 30px; /* Aumenta el espacio interno */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 400px;
+    max-height: 80vh; /* Altura máxima del contenedor (el 80% del alto de la ventana) */
+    overflow-y: auto; /* Habilita el desplazamiento vertical cuando el contenido excede la altura */
+  }
+  /* Estilos para los campos de entrada de texto */
+.formulario-container input[type="text"],
+.formulario-container input[type="email"],
+.formulario-container select,
+.formulario-container textarea {
+  width: calc(100% - 20px); /* Ancho del campo de entrada */
+  padding: 8px; /* Espaciado interno reducido */
+  margin-bottom: 10px; /* Espacio entre los campos de entrada reducido */
+  border-radius: 5px; /* Borde redondeado */
+  border: 1px solid #ccc; /* Borde */
+}
+  /* Estilos adicionales según sea necesario */
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  /* Estilos para los botones */
+  .button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  /* Estilos para los botones de filtros */
+/* Estilos para los botones de filtros */
+.filtros {
+    display: flex;
+    margin-left: 0; /* Ajusta el margen izquierdo a 0 para que estén al extremo izquierdo */
+  }
+  
+  /* Ajusta el margen entre los botones si es necesario */
+  .filtro {
+    margin-right: 10px; /* Puedes ajustar este valor según sea necesario */
+  }
+
+.actualizar:hover {
+    background-color: darkblue; /* Fondo azul oscuro al pasar el mouse */
+}
+  
+.eliminar:hover {
+    background-color: darkred; /* Fondo rojo oscuro al pasar el mouse */
+}
+
+  /* Estilos para el mensaje emergente de confirmación */
+  .confirmacion {
+    background-color: #f8d7da; /* Color de fondo para mensaje de confirmación */
+    color: #721c24; /* Color del texto */
+    border: 1px solid #f5c6cb; /* Borde del mensaje */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Borde redondeado */
+    margin-bottom: 10px; /* Margen inferior */
+  }
+  
+  .confirmacion button {
+    background-color: #dc3545; /* Color de fondo para botón de confirmación */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 3px; /* Borde redondeado */
+    cursor: pointer; /* Cursor de puntero */
+  }
+  
+  .confirmacion button:hover {
+    background-color: #c82333; /* Color de fondo en estado de hover */
+  }
+  /* Estilos para el botón "Agregar" */
+  
+/* Estilos para el botón "Agregar" */
+
+
+
+.buttonAgregar:hover {
+    background-color: darkgreen; /* Fondo verde oscuro al pasar el mouse */
+}
+/* Estilos para los botones circulares */
+.circular-button {
+    border-radius: 50%; /* Hace que el botón sea circular */
+    width: 50px; /* Ancho del botón circular */
+    height: 50px; /* Altura del botón circular */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    font-size: 16px; /* Tamaño de fuente del texto del botón */
+    border: none; /* Quita el borde del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+
+/* Estilos para los filtros de búsqueda circulares */
+.circular-input {
+    border-radius: 25px; /* Hace que el input tenga bordes redondeados */
+    padding: 10px 15px; /* Ajusta el relleno según sea necesario */
+    font-size: 16px; /* Tamaño de fuente del texto del input */
+    border: 1px solid #ccc; /* Establece un borde para el input */
+    outline: none; /* Quita el contorno del input al enfocar */
+}
+
+/* Estilos para los filtros */
+.filtros-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filtro-item {
+    flex: 1;
+    margin-right: 10px;
+}
+/* Estilos para el contenedor de la tabla */
+
+/* Estilos para la barra de navegación */
+.navbar {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    /* Agrega cualquier otro estilo que desees para la barra de navegación */
+  }
+  
+  /* Estilos para la tabla */
+  .tabla-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  table {
+    width: 80%; /* Ancho fijo para la tabla */
+    /* Agrega cualquier otro estilo que desees para la tabla */
+  }
+  
+  
+  table th,
+  table td {
+    border: 1px solid #dddddd; /* Agregar bordes a las celdas */
+    text-align: left;
+    padding: 8px;
+    width: auto; /* Establecer el ancho automático para las celdas */
+  }
+  
+  table th:nth-child(1),
+  table td:nth-child(1) {
+    width: 0%; /* Ancho de la primera columna */
+  }
+  
+  table th:nth-child(2),
+  table td:nth-child(2) {
+    width:0%; /* Ancho de la segunda columna */
+  }
+  
+  table th:nth-child(3),
+  table td:nth-child(3) {
+    width: 0%; /* Ancho de la tercera columna */
+  }
+  
+  table th:nth-child(4),
+  table td:nth-child(4) {
+    width: 0%; /* Ancho de la cuarta columna */
+  }
+  
+  table th:nth-child(5),
+  table td:nth-child(5) {
+    width: 0%; /* Ancho de la quinta columna */
+  }
+  
+  table th:nth-child(6),
+  table td:nth-child(6) {
+    width: 0%; /* Ancho de la sexta columna */
+  }
+  
+  table th:nth-child(7),
+  table td:nth-child(7) {
+    width: 0%; /* Ancho de la séptima columna */
+  }
+  
+  table th:nth-child(8),
+  table td:nth-child(8) {
+    width: 0%; /* Ancho de la octava columna */
+  }
+  
+  
+  
+  table th {
+    background-color: #f2f2f2; /* Agregar color de fondo a las celdas de encabezado */
+  }
+  
+  /* Estilos para las filas pares */
+  table tr:nth-child(even) td {
+    background-color: #ffffff; /* Color de fondo blanco para las filas pares */
+  }
+  
+  /* Estilos para las filas impares */
+  table tr:nth-child(odd) {
+    background-color: #ffffff; /* Color de fondo gris claro para las filas impares */
+  }
+  

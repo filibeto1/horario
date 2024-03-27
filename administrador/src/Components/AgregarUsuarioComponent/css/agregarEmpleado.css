@@ -1,0 +1,32 @@
+.AGEMcontenedor1 {
+  padding: 3%;
+}
+
+.AGEMTable {
+  text-align: justify;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.AGEMBotonContainer {
+  display: flex;
+  justify-content: space-between; /* Espacio entre los elementos */
+  align-items: center;
+  margin-bottom: 15px;
+  width: 98.8%;
+}
+
+.AGEMBuscador {
+  margin-left: 10px; /* Ajusta el margen a la derecha */
+}
+
+
+
+.AGEMTitulo{
+    margin: 2%;
+    text-align: left;
+}
+
+.AGEMCard {
+  min-height: 350px;
+}

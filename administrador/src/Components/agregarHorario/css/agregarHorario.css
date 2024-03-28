@@ -11,10 +11,19 @@
     max-width: 400px;
     text-align: center;
     z-index: 1000;
-  }
-  
+    color: white; /* Texto blanco */
+}
+.navbar {
+    width: 100%;
+    background-color: #007bff; /* Cambia el color de fondo a azul */
+    color: rgb(0, 29, 176);
+    /* Agrega cualquier otro estilo que desees para la barra de navegación */
+}
+
+
   .mensaje-emergente p {
     margin-bottom: 10px;
+    color: rgb(0, 0, 0);
   }
   
   .mensaje-emergente button {
@@ -59,7 +68,7 @@
 
   /* Estilos para el botón "Agregar" */
   .buttonAgregar {
-    background-color: green; /* Fondo verde */
+    background-color: rgb(28, 28, 114); /* Fondo verde */
     color: white; /* Texto blanco */
     border: none; /* Sin borde */
     border-radius: 2px; /* Borde redondeado */
@@ -108,7 +117,7 @@
   /* Estilos para el título */
   .AGEMTitulo {
     margin: 2%;
-    text-align: right; /* Alinea el texto a la derecha */
+    text-align: center; /* Alinea el texto a la derecha */
 }
 
   /* Estilos para las tarjetas */
@@ -152,7 +161,14 @@
   border-radius: 5px; /* Borde redondeado */
   border: 1px solid #ccc; /* Borde */
 }
-  /* Estilos adicionales según sea necesario */
+.formulario-container h2 {
+  color: #ffffff; /* Cambia el color del texto */
+  border: 2px solid rgb(28, 28, 114); /* Cambia el color del contorno */
+  padding: 10px; /* Añade un relleno alrededor del título */
+}
+
+
+
 
   .close {
     position: absolute;
@@ -229,7 +245,7 @@
     border-radius: 50%; /* Hace que el botón sea circular */
     width: 50px; /* Ancho del botón circular */
     height: 50px; /* Altura del botón circular */
-    background-color: #007bff; /* Color de fondo del botón */
+    background-color: rgb(28, 28, 114); /* Color de fondo del botón */
     color: white; /* Color del texto del botón */
     font-size: 16px; /* Tamaño de fuente del texto del botón */
     border: none; /* Quita el borde del botón */
@@ -257,28 +273,24 @@
     flex: 1;
     margin-right: 10px;
 }
-/* Estilos para el contenedor de la tabla */
-
-/* Estilos para la barra de navegación */
-.navbar {
-    width: 100%;
-    background-color: #333;
-    color: white;
-    /* Agrega cualquier otro estilo que desees para la barra de navegación */
-  }
-  
   /* Estilos para la tabla */
   .tabla-container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
+  .tabla-container table tr.primera-fila th {
+    color: white; /* Establece el color del texto en blanco para los encabezados de la primera fila */
+}
+
   table {
-    width: 80%; /* Ancho fijo para la tabla */
+    width: 90%; /* Ancho fijo para la tabla */
     /* Agrega cualquier otro estilo que desees para la tabla */
   }
   
+  .tabla-container h2 {
+    text-align: center; /* Centra el texto dentro del contenedor */
+  }
   
   table th,
   table td {
@@ -331,7 +343,7 @@
   
   
   table th {
-    background-color: #f2f2f2; /* Agregar color de fondo a las celdas de encabezado */
+    background-color: rgb(28, 28, 114); /* Agregar color de fondo a las celdas de encabezado */
   }
   
   /* Estilos para las filas pares */
@@ -342,5 +354,25 @@
   /* Estilos para las filas impares */
   table tr:nth-child(odd) {
     background-color: #ffffff; /* Color de fondo gris claro para las filas impares */
+  }
+  .visualizar-titulo {
+    color: rgb(28, 28, 114);
+    font-weight: bold;
+  }
+  .icon-container {
+    display: inline-block;
+    margin-right: 1px; /* Espacio entre los iconos */
+  }
+  .tabla-container .formulario-emergente label[for="nombreEmpleado"],
+  .tabla-container .formulario-emergente label[for="nombreAdmin"],
+  .tabla-container .formulario-emergente label[for="contrato"],
+  .tabla-container .formulario-emergente label[for="turno"],
+  .tabla-container .formulario-emergente label[for="estadoSolicitud"],
+  .tabla-container .formulario-emergente label[for="correo"],
+  .tabla-container .formulario-emergente label[for="razon"] {
+    color: rgb(28, 28, 114); /* Cambia el color a tu preferencia */
+  }
+  .tabla-container .formulario-emergente h2 {
+    background-color: rgb(28, 28, 114); /* Cambia el color a tu preferencia */
   }
   
